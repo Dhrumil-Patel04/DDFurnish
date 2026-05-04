@@ -33,24 +33,12 @@ const menuMediaQuery3 = window.matchMedia("(min-width: 800px) and (max-width: 85
 const menuMediaQuery4 = window.matchMedia("(max-width: 335px)");
 const headerMediaQuery = window.matchMedia("(max-width: 820px)");
 const headerMiniQuery = window.matchMedia("(max-width: 335px)");
-// const heroContentMediaQuery = window.matchMedia("(max-width: 335px)");
-// const heroSectionMediaQuery = window.matchMedia("(max-width: 335px)");
-// const slidesContainerMediaQuery = window.matchMedia("(max-width: 335px)");
-// const slidersContantH3MediaQuery = window.matchMedia("(max-width: 335px)");
-// const slider1MediaQuery = window.matchMedia("(max-width: 335px)");
-// responsive menu end
-
+;
 // Header start //
 
 
 let header = document.createElement("header");
 
-// function responsiveHeaderInitial(e) {
-//   if (e)
-// }
-
-// header.style.cssText =
-//   "padding: 0px; background-color: white; display: flex; align-items: center; justify-content: space-between; height: 90px; width: 100%; border-radius: 0px 0px 20px 20px; box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); position: fixed; top: 0; left: 0; z-index: 1000; transition: transform 0.3s ease-in-out;";
 
   // let lastScrollY = 0;
   function responsiveHeader(e) {
@@ -61,7 +49,7 @@ let header = document.createElement("header");
         header.style.cssText =
         "padding: 0 16px; background-color: rgb(110 110 24 / 36%); backdrop-filter: blur(16px); display: flex; align-items: center; justify-content: space-between; height: 68px; width: 95%; border-radius: 50px; box-shadow: 0 8px 30px rgba(0,0,0,0.12); position: fixed; top: 25px; left: 9px; z-index: 1000; transition: .3s;";
         } else {
-          header.style.cssText = "padding: 0px 16px; backdrop-filter: blur(16px); display: flex; align-items: center; justify-content: space-between; height: 68px; width: 100%; border-radius: 0px 0px 12px 12px; box-shadow: 0 8px 30px rgba(0,0,0,0.12); position: fixed; top: 0px; left: 0px; z-index: 1000; transition: .3s;";
+          header.style.cssText = "padding: 0px 16px; backdrop-filter: blur(16px); display: flex; align-items: center; justify-content: space-between; height: 68px; width: 100%; border-radius: 0px 0px 12px 12px; box-shadow: 0 8px 30px rgba(0,0,0,0.12); position: fixed; top: 0px; left: 0px; z-index: 1000; transition: .3s; background-color: white;";
         } 
         // lastScrollY = scrollY;
       });
@@ -1290,26 +1278,11 @@ function ContactField(labelText, type, name, placeholder) {
 let contactForm = document.createElement("form");
 
 
-contactForm.addEventListener("submit", async (e) => {
+contactForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  const formData = new FormData(contactForm);
-  formData.append("access_key", "e02997ad-6a1f-472c-8f6d-2f34d367826e");
-  try {
-    const response = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: formData
-    });
-  } catch (error) {
-    console.error("Error submitting form:", error);
-  } finally {
     contactForm.reset();
-    submitButton.innerHTML = "Message sent!";
-    submitButton.disabled = true;
   }
-})
+)
 
 function responsiveFormStyle (e) {
   if (e.matches) {
