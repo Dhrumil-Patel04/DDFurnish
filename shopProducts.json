@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "modern furniture",
+    "price": "$140.00",
+    "image": "images/shop Section image 1.png"
+  },
+  {
+    "id": 2,
+    "name": "modern furniture",
+    "price": "$140.00",
+    "image": "images/shop Section image 2.webp"
+  },
+  {
+    "id": 3,
+    "name": "modern furniture",
+    "price": "$140.00",
+    "image": "images/shop Section image 3.png"
+  },
+  {
+    "id": 4,
+    "name": "modern furniture",
+    "price": "$140.00",
+    "image": "images/shop Section image 4.webp"
+  },
+  {
+    "id": 5,
+    "name": "modern furniture",
+    "price": "$140.00",
+    "image": "images/shop Section image 5.webp"
+  }
+]

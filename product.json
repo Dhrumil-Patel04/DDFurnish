@@ -1,0 +1,45 @@
+[
+  {
+    "id": 1,
+    "name": "wooden & modern chair",
+    "price": "$9.68",
+    "image": "images/Wooden image 1..png"
+  },
+  {
+    "id": 2,
+    "name": "Vintage furniture retro products",
+    "price": "$9.68",
+    "image": "images/Wooden image 2.png"
+  },
+  {
+    "id": 3,
+    "name": "Rustic Furniture dining table $ chair",
+    "price": "$9.68",
+    "image": "images/Wooden image 3..png"
+  },
+  {
+    "id": 4,
+    "name": "outdoor Furniture set with umbrella flexible",
+    "price": "$9.68",
+    "image": "images/Wooden image 4..png"
+  },
+  {
+    "id": 5,
+    "name": "totally folded Bed with cushion",
+    "price": "$9.68",
+    "image": "images/Wooden image 5..png"
+  },
+  {
+    "id": 6,
+    "name": "Futuristic scaluptural Chair & Modern Aesthetic",
+    "price": "$9.68",
+    "image": "images/Wooden image 6..png"
+  },
+  {
+    "id": 7,
+    "name": "Wardrobe with partition",
+    "price": "$9.68",
+    "image": "images/Wooden image 7..png"
+  }
+]
+
