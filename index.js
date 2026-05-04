@@ -58,16 +58,6 @@ let header = document.createElement("header");
   responsiveHeader(headerMiniQuery);
   headerMiniQuery.addEventListener("change", responsiveHeader);
 
-// window.addEventListener('scroll', () => {
-//   const scrollY = window.scrollY || window.pageYOffset;
-//   if (scrollY > lastScrollY && scrollY > 100) {
-//     header.style.transform = "translateY(-100%)";
-//   } else {
-//     header.style.transform = "translateY(0)";
-//   }
-//   lastScrollY = scrollY;
-// });
-// Logo bar
 
 let div = document.createElement("div");
 div.style.padding = "0px";
@@ -213,7 +203,7 @@ function applyHeaderResponsiveStyle() {
     loginIconDiv.style.display = "none";
     cartQuantitySpan.style.display = "none";
     // header.style.cssText =
-    //   "padding: 0 16px; background-color: rgb(110 110 24 / 36%); backdrop-filter: blur(16px); display: flex; align-items: center; justify-content: space-between; height: 68px; width: 95%; border-radius: 50px; box-shadow: 0 8px 30px rgba(0,0,0,0.12); position: fixed; top: 25px; left: 9px; z-index: 1000; transition: transform 0.3s ease-in-out;";
+
     div.style.cssText = "padding: 0px; margin: 0px; display: flex; align-items: center; gap: 12px;";
     divIcon.style.cssText = "display: flex; align-items: center; gap: 20px; margin-right: 18px; position: relative;";
     logoDiv.style.cssText += "padding-left: 0px;";
@@ -2148,6 +2138,11 @@ shopSectionMediaQuery.addEventListener("change", (e) => {
 body.appendChild(shopSection);
 
 // fetch and display products from product.json
+
+// allProducts();
+// shopSection.addEventListener("DOMContentLoaded", allProducts);
+document.addEventListener("DOMContentLoaded",allProducts);
+
 async function allProducts() {
   try{
     const response = await fetch('product.json');
@@ -2251,8 +2246,6 @@ async function allProducts() {
   }
 }
 
-allProducts();
-
 // Shop section end //
 
 
@@ -2292,8 +2285,6 @@ const addToCartItems = (product) => {
      cartProduct.push({...product, quantity: 1})
   }
 
-
-  // for (let i = 1; i < product.length; i++) {
 let cartListItems = document.createElement("div");
 cartListItems.setAttribute("data-product-id", product.id);
 cartListItems.style.cssText = "display: flex; align-items: center; gap: .8rem; padding: .8rem; overflow: auto; border-radius: 10px; transition: all .4s ease-in-out;"
@@ -2343,7 +2334,7 @@ cartListItemMinusIcon.style.background = product.id % 2 === 1 ? "black" : "white
 cartListItemMinusIcon.addEventListener("click", (e) => {
   e.preventDefault();
   const cartItem = cartProduct.find(item => item.id === product.id);
-  if (!cartItem) return;
+  if (!cartItem.payload) return;
   if (cartItem.quantity > 1) {
     cartItem.quantity -= 1;
     cartListItemQuantityValue.innerHTML = cartItem.quantity;
