@@ -1,4 +1,10 @@
-
+window.addEventListener("error", function(e){
+   alert(
+      "MESSAGE: " + e.message +
+      "\nFILE: " + e.filename +
+      "\nLINE: " + e.lineno
+   );
+});
 
 let link = document.createElement("link");
 
@@ -2141,7 +2147,6 @@ body.appendChild(shopSection);
 // allProducts();
 // shopSection.addEventListener("DOMContentLoaded", allProducts);
 // document.addEventListener("DOMContentLoaded",allProducts);
-allProducts();
 
 async function allProducts() {
   try{
@@ -2244,7 +2249,11 @@ async function allProducts() {
   } catch(error) {
     console.error("Error loading products: ", error);
   }
+  let products2 = await allProducts()
+  console.log(products2);
+  
 }
+
 
 // Shop section end //
 
