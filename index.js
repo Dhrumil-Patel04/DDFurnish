@@ -1859,7 +1859,7 @@ heroContent2.appendChild(contentPTag2);
 
 // a
 let rightArrowIcon2 = document.createElement("img");
-rightArrowIcon2.setAttribute("src", "right-arrow -con.png");
+rightArrowIcon2.setAttribute("src", "images/right-arrow-button.png");
 
 let contentBtn2 = document.createElement("a");
 contentBtn2.setAttribute("href", "#");
@@ -1900,7 +1900,6 @@ heroSectionMediaQuery.addEventListener("change", (e) => {
 });
 heroImages2.appendChild(heroImage2);
 
-// const heroBackButtonMediaQuery = window.matchMedia("(max-width: 335px)");
 
 // hero back button
 let heroBackBtn = document.createElement("div");
@@ -2142,7 +2141,7 @@ body.appendChild(shopSection);
 // allProducts();
 // shopSection.addEventListener("DOMContentLoaded", allProducts);
 // document.addEventListener("DOMContentLoaded",allProducts);
-console.log(allProducts());
+allProducts();
 
 async function allProducts() {
   try{
