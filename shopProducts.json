@@ -3,30 +3,30 @@
     "id": 1,
     "name": "modern furniture",
     "price": "$140.00",
-    "image": "images/shop Section image 1.png"
+    "image": "images/shop-Section-image1.png"
   },
   {
     "id": 2,
     "name": "modern furniture",
     "price": "$140.00",
-    "image": "images/shop Section image 2.webp"
+    "image": "images/shop-Section-image2.webp"
   },
   {
     "id": 3,
     "name": "modern furniture",
     "price": "$140.00",
-    "image": "images/shop Section image 3.png"
+    "image": "images/shop-Section-image3.png"
   },
   {
     "id": 4,
     "name": "modern furniture",
     "price": "$140.00",
-    "image": "images/shop Section image 4.webp"
+    "image": "images/shop-Section-image4.webp"
   },
   {
     "id": 5,
     "name": "modern furniture",
     "price": "$140.00",
-    "image": "images/shop Section image 5.webp"
+    "image": "images/shop-Section-image5.webp"
   }
 ]

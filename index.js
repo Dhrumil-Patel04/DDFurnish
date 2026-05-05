@@ -80,7 +80,7 @@ headerMiniQuery.addEventListener("change", responsiveLogoDiv);
 div.appendChild(logoDiv);
 
 let logo = document.createElement("img");
-logo.setAttribute("src", "FurnitureLogo.jpeg");
+logo.setAttribute("src", "images/Furniture-Logo.jpeg");
 logo.style.cssText =
   "width: 60px; margin-left: 18px; margin-right: 0px; border-radius: 50px";
 logoDiv.appendChild(logo);
@@ -116,7 +116,7 @@ searchInput.style.cssText =
 searchform.appendChild(searchInput);
 
 let searchIcon = document.createElement("img");
-searchIcon.setAttribute("src", "search icon.png");
+searchIcon.setAttribute("src", "images/search-icon.png");
 searchIcon.style.cssText =
   "width: 20px; height: 20px; object-fit: contain; cursor: pointer; margin-right: 6px;";
 searchform.appendChild(searchIcon);
@@ -134,7 +134,7 @@ menuIconDiv.style.cssText =
 divIcon.appendChild(menuIconDiv);
 
 let headerMenuIcon = document.createElement("img");
-headerMenuIcon.setAttribute("src", "Menu icon.png");
+headerMenuIcon.setAttribute("src", "images/menu-icon.png");
 headerMenuIcon.style.cssText = "width: 20px; margin: 2px;";
 
 headerMenuIcon.addEventListener("mouseover", (event) => {
@@ -247,7 +247,7 @@ cartIconDiv.style.cssText =
 divIcon.appendChild(cartIconDiv);
 
 let headerCartIcon = document.createElement("img");
-headerCartIcon.setAttribute("src", "cart icon.svg");
+headerCartIcon.setAttribute("src", "images/shopping-bag.png");
 headerCartIcon.style.width = "25px";
 
 function getCartOpenLeft() {
@@ -317,7 +317,7 @@ loginIconDiv.style.cssText =
 divIcon.appendChild(loginIconDiv);
 
 let headerLoginIcon = document.createElement("img");
-headerLoginIcon.setAttribute("src", "loginUser icon.png");
+headerLoginIcon.setAttribute("src", "images/loginUser-icon.png");
 headerLoginIcon.style.width = "25px";
 
 headerLoginIcon.addEventListener("mouseover", () => {
@@ -473,7 +473,7 @@ responsiveHeroImageWrapper(heroSectionMediaQuery2);
 heroSectionMediaQuery2.addEventListener("change", responsiveHeroImageWrapper);
 
 let heroImage = document.createElement("img");
-heroImage.setAttribute("src", "Furniture image 9..png");
+heroImage.setAttribute("src", "images/furniture-image9.png");
 heroImage.setAttribute("alt", "Large modern furniture setup");
 
 function responsiveHeroImage(e) {
@@ -542,7 +542,7 @@ closerDiv.addEventListener("click", () => {
 });
 
 let closerIcon = document.createElement("img");
-closerIcon.setAttribute("src", "closer icon.png");
+closerIcon.setAttribute("src", "images/closer-icon.png");
 if (menuMediaQuery4.matches) {
   closerIcon.style.cssText = "width: 25px; position: fixed; top: 8.5rem; right: 2rem; cursor: pointer; z-index: 1001; font-size: 5rem; display: none;"
 } else {
@@ -814,12 +814,12 @@ aboutMedia.style.cssText =
   "display: flex; flex-wrap: wrap; gap: 1.5rem; width: 100%; border-radius: 24px; overflow: hidden; background: rgba(249, 245, 238, 0.93); border: 1px solid rgba(206, 135, 29, 0.12); box-shadow: inset 0 0 0 1px rgba(255,255,255,0.92);";
 
 let aboutImage = document.createElement("img");
-aboutImage.src = "Furniture image 7..png";
+aboutImage.src = "images/furniture-image7.png";
 aboutImage.alt = "Stylish furniture arrangement";
 aboutImage.style.cssText =
   "flex: 1 1 320px; min-width: 280px; width: 100%; max-width: 440px; height: 320px; object-fit: cover; display: block;";
 aboutImage.onerror = () => {
-  aboutImage.src = "Furniture image 8..png";
+  aboutImage.src = "images/furniture-image8.png";
 };
 aboutMedia.appendChild(aboutImage);
 
@@ -1127,7 +1127,7 @@ blogGrid.appendChild(
     "How to build furniture arrangements that feel light, warm, and effortless throughout the year.",
     "Interiors",
     "May 2026",
-    "images/blog image 1.png"
+    "images/blog-image1.png"
   )
 );
 blogGrid.appendChild(
@@ -1136,7 +1136,7 @@ blogGrid.appendChild(
     "Practical styling tips for making compact spaces feel sophisticated and spacious.",
     "Styling",
     "April 2026",
-    "images/blog image 2.png"
+    "images/blog-image2.png"
   )
 );
 blogGrid.appendChild(
@@ -1145,7 +1145,7 @@ blogGrid.appendChild(
     "Why texture, finish, and tone are the quiet heroes of modern furniture design.",
     "Materials",
     "March 2026",
-    "images/Wooden image 1..png"
+    "images/wooden-image1.png"
   )
 );
 
@@ -1719,7 +1719,7 @@ heroContent.appendChild(contentP);
 
 // a
 let rightArrowIcon = document.createElement("img");
-rightArrowIcon.setAttribute("src", "right-arrow -con.png");
+rightArrowIcon.setAttribute("src", "images/right-arrow-button.png");
 
 let contentBtn = document.createElement("a");
 contentBtn.setAttribute("href", "#");
@@ -1748,7 +1748,7 @@ let heroImages = document.createElement("div");
 slide.appendChild(heroImages);
 
 let heroImage1 = document.createElement("img");
-heroImage1.setAttribute("src", "furniture image 2..png");
+heroImage1.setAttribute("src", "images/furniture-image2.png");
 function responsiveHeroImage3(e) {
   if (e.matches) {
     heroImage1.style.cssText = "width: 78%; margin-top: 89%; margin-left: 15px;";
@@ -1885,7 +1885,7 @@ let heroImages2 = document.createElement("div");
 slide2.appendChild(heroImages2);
 
 let heroImage2 = document.createElement("img");
-heroImage2.setAttribute("src", "Furniture image 8..png");
+heroImage2.setAttribute("src", "images/furniture-image8.png");
 
 function responsiveHeroImage2(e) {
   if (e.matches) {
@@ -1955,7 +1955,7 @@ heroBackBtn.addEventListener("mouseout", () => {
 HeroSection.appendChild(heroBackBtn);
 
 let BackIcon = document.createElement("img");
-BackIcon.setAttribute("src", "LeftArrow.png");
+BackIcon.setAttribute("src", "images/left-Arrow.png");
 BackIcon.style.cssText = "position: absolute; top: 11px; left: 18px";
 heroBackBtn.appendChild(BackIcon);
 
@@ -2012,7 +2012,7 @@ heroNextBtn.addEventListener("mouseout", () => {
 HeroSection.appendChild(heroNextBtn);
 
 let NextIcon = document.createElement("img");
-NextIcon.setAttribute("src", "RightArrow.png");
+NextIcon.setAttribute("src", "images/right-Arrow.png");
 NextIcon.style.cssText = "position: absolute; top: 11px; left: 12px;";
 heroNextBtn.appendChild(NextIcon);
 
@@ -2141,7 +2141,8 @@ body.appendChild(shopSection);
 
 // allProducts();
 // shopSection.addEventListener("DOMContentLoaded", allProducts);
-document.addEventListener("DOMContentLoaded",allProducts);
+// document.addEventListener("DOMContentLoaded",allProducts);
+console.log(allProducts());
 
 async function allProducts() {
   try{
@@ -2326,7 +2327,7 @@ cartListItems.appendChild(cartListPlusMinusQuantity);
 
 
 let cartListItemMinusIcon = document.createElement("img");
-cartListItemMinusIcon.setAttribute("src", "images/Minus Icon.png")
+cartListItemMinusIcon.setAttribute("src", "images/minus-icon.png")
 cartListItemMinusIcon.style.cssText = "background: black; width: 1.7rem; aspect-ratio: 1; border-radius: 100vw; text-align: center; line-height: 1.7rem; cursor: pointer;"
 
 cartListItemMinusIcon.style.background = product.id % 2 === 1 ? "black" : "white";
@@ -2334,7 +2335,7 @@ cartListItemMinusIcon.style.background = product.id % 2 === 1 ? "black" : "white
 cartListItemMinusIcon.addEventListener("click", (e) => {
   e.preventDefault();
   const cartItem = cartProduct.find(item => item.id === product.id);
-  if (!cartItem.payload) return;
+  if (!cartItem) return;
   if (cartItem.quantity > 1) {
     cartItem.quantity -= 1;
     cartListItemQuantityValue.innerHTML = cartItem.quantity;
@@ -2366,7 +2367,7 @@ cartListPlusMinusQuantity.appendChild(cartListItemQuantityValue)
 
 
 let cartListItemPlusIcon = document.createElement("img");
-cartListItemPlusIcon.setAttribute("src", "images/Plus Icon.png")
+cartListItemPlusIcon.setAttribute("src", "images/plus-icon.png")
 cartListItemPlusIcon.style.cssText = "background: black; width: 1.7rem; aspect-ratio: 1; border-radius: 100vw; text-align: center; line-height: 1.7rem;  cursor: pointer;"
 
 cartListItemPlusIcon.style.background = product.id % 2 === 1 ? "black" : "white";
@@ -2551,7 +2552,7 @@ async function shopProducts() {
       });
 
       let shopProductBoxIcon1 = document.createElement("img");
-      shopProductBoxIcon1.setAttribute("src", "images/shopping icon.png");
+      shopProductBoxIcon1.setAttribute("src", "images/shopping-icon.png");
       shopProductBoxIcon1.alt = "shopping";
       shopProductBoxIcon1.style.cssText = "width: 24px; height: 24px; display: block; cursor: pointer;";
       shopProductBoxIcon1.addEventListener("click", (event) => {
@@ -2562,7 +2563,7 @@ async function shopProducts() {
       shopProductBoxIcons.appendChild(shopProductBoxIcon1);
 
       let shopProductBoxIcon2 = document.createElement("img");
-      shopProductBoxIcon2.setAttribute("src", "images/heart icon.png");
+      shopProductBoxIcon2.setAttribute("src", "images/heart-icon.png");
       shopProductBoxIcon2.alt = "favorite";
       shopProductBoxIcon2.style.cssText = "width: 24px; height: 24px; display: block; cursor: pointer;";
       shopProductBoxIcon2.addEventListener("click", (event) => {
@@ -2572,7 +2573,7 @@ async function shopProducts() {
       shopProductBoxIcons.appendChild(shopProductBoxIcon2);
 
       let shopProductBoxIcon3 = document.createElement("img");
-      shopProductBoxIcon3.setAttribute("src", "images/visible icon.png");
+      shopProductBoxIcon3.setAttribute("src", "images/visible-icon.png");
       shopProductBoxIcon3.alt = "view";
       shopProductBoxIcon3.style.cssText = "width: 24px; height: 24px; display: block; cursor: pointer;";
       shopProductBoxIcon3.addEventListener("click", (event) => {
@@ -2755,10 +2756,10 @@ copyright.innerHTML = `© ${new Date().getFullYear()} DDFurni. Crafted for moder
 let socialWrap = document.createElement("div");
 socialWrap.style.cssText = "display: flex; align-items: center; gap: 0.85rem;";
 function socialIcon(symbol, label) {
-  let icon = document.createElement("a");
+  let icon = document.createElement("img");
   icon.href = "#";
+  icon.src = symbol;
   icon.setAttribute("aria-label", label);
-  icon.innerHTML = symbol;
   icon.style.cssText =
     "display: inline-flex; align-items: center; justify-content: center; width: 2.6rem; height: 2.6rem; border-radius: 50%; background: rgba(255,255,255,0.08); color: #fff; text-decoration: none; transition: transform 0.2s ease, background 0.2s ease;";
   icon.addEventListener("mouseover", () => {
@@ -2771,9 +2772,9 @@ function socialIcon(symbol, label) {
   });
   return icon;
 }
-socialWrap.appendChild(socialIcon("�", "Facebook"));
-socialWrap.appendChild(socialIcon("📸", "Instagram"));
-socialWrap.appendChild(socialIcon("🐦", "Twitter"));
+socialWrap.appendChild(socialIcon("images/facebook-icon.webp", "Facebook"));
+socialWrap.appendChild(socialIcon("images/instagram-icon.webp", "Instagram"));
+socialWrap.appendChild(socialIcon("images/x-icon.png", "Twitter"));
 footerBottom.appendChild(copyright);
 footerBottom.appendChild(socialWrap);
 footerSection.appendChild(footerBottom);
